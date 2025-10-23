@@ -49,4 +49,17 @@ body {
   width: 800px;
   height: 450px;
   border-radius: 2vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(3, 1fr);    /* 3 rows  */
+  gap: 20px;                             /* spacing between boxes */
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.boxes {
+  background-color: white;
+  border-radius: 2vh;
+  width: 100%;  /* fills the grid cell horizontally */
+  height: 100%; /* fills the grid cell vertically */
 }
