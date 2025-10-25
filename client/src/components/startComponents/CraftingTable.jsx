@@ -58,12 +58,12 @@ export default function Crafter({ setCraft }) {
               placeholder="Enter material..."
               value={text}
               onChange={(e) => setText(e.target.value)}
-              className="relative rounded-[1vw] left-[4vh] bottom-[1vh] bg-white w-[25vw] h-[7vh] text-center text-[1.5vw] font-semibold text-gray-700 outline-none transition-all duration-300"
+              className="relative rounded-[1vw] left-[4vh] bottom-[1vh] bg-white w-[25vw] h-[7vh] animate-float text-center text-[1.5vw] font-semibold text-gray-700 outline-none transition-all duration-300"
             />
           </div>
 <button
   id="okButton"
-  className="absolute right-[53vh] bottom-[4vh] font-bold flex items-center justify-center w-[11vh] h-[11vh] bg-orange-500 text-white text-5xl rounded-full shadow-red-900 shadow-md hover:bg-[#ffb507] transition-transform duration-300 hover:scale-110 cursor-pointer font-spartan"
+  className="absolute right-[24vw] bottom-[4vh] font-bold flex items-center justify-center w-[7vw] h-[7vw] bg-orange-500 text-white text-3xl rounded-full shadow-red-900 shadow-md hover:bg-[#ffb507] transition-transform duration-300 hover:scale-110 cursor-pointer font-spartan"
 >
   OK?
 </button>

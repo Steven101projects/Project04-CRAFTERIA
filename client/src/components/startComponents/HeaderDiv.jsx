@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function BlockHeader({ craft }) {
   // Base layout styles
-  const container = `relative flex flex-col h-[57vh] items-center justify-center text-white 
+  const container = `relative flex flex-col h-[59vh] items-center justify-center text-white 
     bg-[linear-gradient(90deg,#ff880c,#ef290e)] w-full overflow-hidden 
     transition-all duration-700 ease-in-out shadow-orange-700 shadow-lg`
 
@@ -27,10 +27,10 @@ export default function BlockHeader({ craft }) {
   const bottomLineMin = `absolute bottom-8 w-5/6 left-1/2 -translate-x-1/2 border-t-2 border-orange-300 opacity-90 animate-fadeIn delay-[1s] transition-all duration-700 ease-in-out`
 
   // Main title and subtitle
-const title = "relative right-[6vw] text-[22vw] mt-[1.5rem] font-bold tracking-tight leading-none font-spartan";
+const title = "relative right-[6vw] text-[22vw] mt-[3rem] font-bold tracking-tight leading-none font-spartan animate-floatlr";
   const titleMin = `relative text-[8vw] mt-[1rem] font-bold tracking-tight leading-none font-spartan animate-slideDown transition-all duration-700 ease-in-out`
 
-  const subtitle = `relative text-[2vw] bottom-11 font-semibold animate-fadeUp delay-[0.5s]`
+  const subtitle = `relative text-[2vw] bottom-[10vh] font-semibold animate-fadeUp delay-[0.5s]`
   const subtitleMin = `relative text-[1.5vw] bottom-6 font-semibold animate-fadeUp delay-[0.5s] animate-floatlr transition-all duration-700 ease-in-out`
 
   // Floating “moles”
@@ -56,7 +56,7 @@ const title = "relative right-[6vw] text-[22vw] mt-[1.5rem] font-bold tracking-t
     <div className={activeContainer}>
 
       {/* Top navigation */}
-      <NavLink to="/" className={activeNavLeft}>
+      <NavLink to="/craftbook" className={activeNavLeft}>
         Craftbook
       </NavLink>
 

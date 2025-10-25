@@ -12,12 +12,20 @@ export default function Home() {
       <BlockHeader craft={craft}/>
         <Crafter setCraft={setCraft}/>
 <div className="mt-10 text-center absolute z-10 bottom-[3vh] left-[2vw]">
-  <div className="inline-block shadow-[#9d8606] shadow-md h-[3vw] w-[13vw] bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold text-3xl px-8 py-4 rounded-full hover:from-orange-500 hover:to-red-500 transition animate-float flex items-center justify-center gap-2">
-    <NavLink to="/register" className="underline">
+  <div className="inline-flex items-center justify-center gap-2 rounded-full shadow-[#9d8606] shadow-md bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold hover:from-orange-500 hover:to-red-500 transition animate-float cursor-pointer w-[20vw] h-[9vh]">
+    <NavLink
+      to="/register"
+      className="underline text-[1.5vw]"
+    >
       Register?
     </NavLink>
-    <span>or</span>
-    <NavLink to="/login" className="underline">
+    <span className="text-[1.5vw]">
+      or
+    </span>
+    <NavLink
+      to="/login"
+      className="underline text-[1.5vw]"
+    >
       Log In
     </NavLink>
   </div>
