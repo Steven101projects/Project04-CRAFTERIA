@@ -3,21 +3,21 @@ import { NavLink } from 'react-router-dom'
 
 export default function BlockHeader({ craft }) {
   // Base layout styles
-  const container = `relative flex flex-col h-[60vh] items-center justify-center text-white 
+  const container = `relative flex flex-col h-[57vh] items-center justify-center text-white 
     bg-[linear-gradient(90deg,#ff880c,#ef290e)] w-full overflow-hidden 
-    transition-all duration-700 ease-in-out`
+    transition-all duration-700 ease-in-out shadow-orange-700 shadow-lg`
 
   const containerMin = `relative flex flex-col h-[30vh] items-center justify-center text-white 
     bg-[linear-gradient(90deg,#ff880c,#ef290e)] w-full overflow-hidden 
-    transition-all duration-700 ease-in-out`
+    transition-all duration-700 ease-in-out shadow-orange-700 shadow-lg`
 
   // Navigation links
   const navLink = `font-bold transition-all duration-700 ease-in-out hover:scale-110`
   const navLeft = `absolute top-3 left-4 text-3xl ${navLink}`
   const navRight = `absolute top-3 right-5 text-3xl ${navLink}`
 
-  const navLeftMin = `absolute top-2 left-4 text-xl ${navLink}`
-  const navRightMin = `absolute top-2 right-5 text-xl ${navLink}`
+  const navLeftMin = `absolute top-2 left-4 text-2xl ${navLink}`
+  const navRightMin = `absolute top-2 right-5 text-2xl ${navLink}`
 
   // Decorative lines
   const topLine = `absolute top-[2rem] left-[11rem] right-[8rem] border-t-4 border-orange-300 opacity-90 transition-all duration-700 ease-in-out`
@@ -27,14 +27,14 @@ export default function BlockHeader({ craft }) {
   const bottomLineMin = `absolute bottom-8 w-5/6 left-1/2 -translate-x-1/2 border-t-2 border-orange-300 opacity-90 animate-fadeIn delay-[1s] transition-all duration-700 ease-in-out`
 
   // Main title and subtitle
-  const title = `relative right-[8vw] text-[20vw] mt-[1.5rem] font-bold tracking-tight leading-none font-spartan animate-slideDown transition-all duration-700 ease-in-out`
-  const titleMin = `relative text-[10vw] mt-[1rem] font-bold tracking-tight leading-none font-spartan animate-slideDown transition-all duration-700 ease-in-out`
+const title = "relative right-[6vw] text-[22vw] mt-[1.5rem] font-bold tracking-tight leading-none font-spartan";
+  const titleMin = `relative text-[8vw] mt-[1rem] font-bold tracking-tight leading-none font-spartan animate-slideDown transition-all duration-700 ease-in-out`
 
-  const subtitle = `relative text-[2vw] bottom-11 font-semibold animate-fadeUp delay-[0.5s] animate-floatlr transition-all duration-700 ease-in-out`
-  const subtitleMin = `relative text-[1vw] bottom-6 font-semibold animate-fadeUp delay-[0.5s] animate-floatlr transition-all duration-700 ease-in-out`
+  const subtitle = `relative text-[2vw] bottom-11 font-semibold animate-fadeUp delay-[0.5s]`
+  const subtitleMin = `relative text-[1.5vw] bottom-6 font-semibold animate-fadeUp delay-[0.5s] animate-floatlr transition-all duration-700 ease-in-out`
 
   // Floating “moles”
-  const moleBase = `absolute bottom-5 bg-white rounded-full animate-floatSlow transition-all duration-700 ease-in-out`
+  const moleBase = `absolute bottom-8 bg-white rounded-full`
   const moleLeft = `${moleBase} left-8 w-20 h-10`
   const moleRight = `${moleBase} right-8 w-20 h-10`
 

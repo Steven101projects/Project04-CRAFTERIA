@@ -41,16 +41,21 @@ export default {
         floatlr: { // Custom keyframe name
           '0%, 100%': { transform: 'translateX(-10px)' }, // Starting and ending position (slightly left)
           '50%': { transform: 'translateX(10px)' },     // Mid-point position (slightly right)
+        },
+        pulseScale: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.08)' },
         }
       },
       animation: {
-        float: 'float 3s ease-in-out infinite',
+        float: 'float 2s ease-in-out infinite',
         slideDown: 'slideDown 1s ease-out forwards',
         fadeUp: 'fadeUp 1.2s ease-out forwards',
         fadeIn: 'fadeIn 1.5s ease-in forwards',
         floatSlow: 'floatSlow 3s ease-in-out infinite',
         gradientMove: 'gradientMove 8s ease infinite',
         floatlr: 'floatlr 3s ease-in-out infinite', 
+                pulseScale: 'pulseScale 3s ease-in-out infinite',
       },
     },
   },
